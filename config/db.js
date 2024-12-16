@@ -7,7 +7,9 @@ const connectDB = async () => {
     try {
         const uri = process.env.MONGO_URI;
         if (!uri) throw new Error('La variable MONGO_URI no está definida');
-        await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+        
+       
+        await mongoose.connect(uri);
         console.log('MongoDB conectado correctamente');
     } catch (error) {
         console.error('Error conectando a MongoDB:', error.message);
