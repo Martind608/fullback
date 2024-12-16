@@ -22,6 +22,3 @@ app.use('/api/productos', productosRoutes);
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
-app.get('/', (req, res) => {
-    res.send('Bienvenido al backend de la API de productos');
-});
