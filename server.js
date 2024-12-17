@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(cors({
-    origin: 'fullfront-production-c9f3.up.railway.app', 
+    origin: 'https://fullfront-production-d391.up.railway.app', 
 }));
 app.use(morgan('dev'));
 app.use(express.json());
